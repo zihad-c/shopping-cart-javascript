@@ -120,3 +120,40 @@ document.getElementById('delivery-20').addEventListener('click', function () {
     calculate('20');
 });
 
+// update promo code 
+
+const promoInput = document.getElementById('promo');
+const applyBtn = document.getElementById('apply');
+applyBtn.addEventListener('click', function () {
+    const promoCode = promoInput.value;
+    const totalBalance = document.getElementById('total-amount');
+    // const discoutAmount = totalBalance.innerText;
+
+    const promoError = document.getElementById('promo-error');
+
+    if (promoCode == "stevekaku") {
+        // totalBalance.innerText == 1299 - (1299/5);
+        const totalBalanceInText = totalBalance.innerText;
+        const totalBalanceInNumber = parseFloat(totalBalanceInText);
+        // totalBalance.innerText = Math.floor(1299 - (1299 / 5));
+        totalBalance.innerText = Math.floor(totalBalanceInNumber - (totalBalanceInNumber / 5));
+
+        // clearing the input field 
+        promoInput.value = "";
+
+        // disable applyBtn button
+        document.getElementById('apply').disabled = "true";
+
+        // promo-error hidden 
+        promoError.style.display = "none";
+
+        // gross total changed
+        const totalAmount = document.getElementById('gross-total');
+        totalAmount.innerText = totalBalance.innerText;
+    }
+
+    else {
+        // console.log("invalid promo code applied");
+        promoError.style.display = "block";
+    }
+})
