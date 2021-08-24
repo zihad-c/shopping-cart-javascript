@@ -1,0 +1,112 @@
+
+body {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+.text {
+    margin-top: 50px;
+}
+
+.main-container {
+    display: flex;
+    justify-content: center;
+    /* margin-top: 50px; */
+}
+
+.image {
+    margin-top: 100px;
+    margin-left: 10%;
+}
+
+.image img {
+    width: 80%;
+}
+
+.top h1 {
+    font-weight: 600;
+    font-size: 36px;
+}
+
+.top p {
+    padding-right: 200px;
+    margin-bottom: 50px;
+}
+
+.heading {
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+
+.memory,
+.storage,
+.delivery {
+    margin-bottom: 50px;
+}
+
+button:hover {
+    cursor: pointer;
+    background-color: #000;
+    color: #ddd;
+}
+.btn {
+    padding: 8px 12px;
+    border: 2px solid rgba(0, 0, 0, 0.747);
+}
+
+.cart {
+    display: flex;
+    margin-top: 50px;
+}
+
+.cart h4,
+.cart h5,
+.cart h5 span,
+.total h5,
+.total-amount h5,
+.total-amount span {
+    font-weight: 600;
+}
+
+.cart .right {
+    padding-left: 100px;
+}
+
+hr {
+    border: 1px solid black;
+    margin: 0;
+    width: 60%;
+}
+
+.total {
+    display: flex;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.total-amount {
+    padding-left: 170px;
+}
+
+#promo {
+    width: 250px;
+    padding: 8px 0;
+}
+
+.apply-btn {
+    border: 0;
+    padding: 9px 15px;
+    background-color: crimson;
+    color: #fff;
+}
+
+footer {
+    margin-top: 100px;
+    text-align: center;
+}
+
+footer span {
+    margin-right: 50px;
+}
